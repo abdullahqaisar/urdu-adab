@@ -1,0 +1,254 @@
+body {
+    background-color: black;
+    font-family: 'Noto Nastaliq Urdu', Helvetica, serif;
+    margin: 0%;
+}
+
+.header {
+    background: #e8e8e8;
+    width: 100%;
+    height: 24.7rem;
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+}
+
+.header-text {
+    text-align: right;
+    width: 60%;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    color: black;
+}
+
+.header-text h1 {
+    font-size: 5rem;
+    letter-spacing: 10px;
+    margin-right: 10%;
+    margin-block-start: 0.67rem;
+    margin-block-end: 0rem;
+}
+
+.defination {
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    color: #918f8f;
+    margin-right: 11%;
+    margin-block-start: 0rem;
+    margin-bottom: 10%;
+}
+
+.header-text h2 {
+    margin-right: 11%;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    color: #918f8f;
+    font-style: italic;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+}
+
+.body-content {
+    position: relative;
+}
+
+.navbar {
+    background-color: #3e3e3e;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    overflow: hidden;
+    padding: 5px;
+    text-align: center;
+}
+
+.navbar a {
+    color: #c2c2c2;
+    font-weight: medium;
+    text-decoration: none;
+    margin: 30px;
+}
+
+.navbar a:hover {
+    background-color: #e8e8e8;
+    padding: 11px;
+    color: #3e3e3e;
+}
+
+.navbar a:active {
+    background-color: #cacaca;
+}
+
+.row {
+    background-color: #c2c2c2;
+    text-align: right;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+}
+
+.side {
+    text-align: right;
+    -ms-flex: 30%;
+    flex: 30%;
+    background-color: #3e3e3e;
+    color: #c2c2c2;
+    margin: 2% 5% 2% 5%;
+    padding: 25px;
+}
+
+.side a {
+    text-decoration: none;
+    color: none;
+}
+
+.side h6 {
+    color: #ffffff;
+    font-weight: lighter;
+    margin: 0 0 1px 0;
+}
+
+.side h5 {
+    color: #c2c2c2;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.read-more {
+    font-size: smaller;
+    color: #c2c2c2;
+    float: left;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.read-all {
+    font-size: smaller;
+    color: #c2c2c2;
+    font-weight: lighter;
+    float: right;
+    padding-top: 10px;
+}
+
+.dotted-line {
+    border-style: dotted none none;
+    clear: both;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-color: #b4bebe;
+    border-width: 2px;
+}
+
+.dotted-line-main {
+    border-style: dotted none none;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-color: #3e3e3e;
+    border-width: 2px;
+}
+
+.main {
+    -ms-flex: 70%;
+    flex: 70%;
+    margin-right: 10%;
+    background-color: #c2c2c2;
+    padding: 20px;
+    font-weight: lighter;
+}
+
+.content h2 {
+    margin: 0;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.content h5 {
+    margin: 0;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+}
+
+.flex-content {
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+}
+
+.flex-img {
+    flex: 40%;
+}
+
+.flex-img img {
+    width: 90%;
+}
+
+.flex-column {
+    flex: 60%;
+    width: 100%;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.row {
+    text-align: right;
+    direction: rtl;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    background-color: #3e3e3e;
+    color: #c2c2c2;
+    padding: 10px 0px 10px 0px;
+}
+
+.footer .name {
+    text-align: left;
+    font-weight: lighter;
+    margin: 0;
+    display: inline;
+    font-style: italic;
+    padding-left: 30px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.footer .logo {
+    position: absolute;
+    background: #c2c2c2;
+    display: inline;
+    right: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.footer .logo img {
+    width: 30px;
+}
+
+@media screen and (max-width: 750px) {
+    .row {
+        flex-direction: column;
+    }
+    .flex-content {
+        flex-direction: column;
+    }
+}
