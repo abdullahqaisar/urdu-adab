@@ -4,7 +4,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function Navbar() {
+function TopNav() {
   return (
     <nav className="navbar pull-right navbar-expand-sm navbar-light bg-light">
       <a className="navbar-brand ms-4" href="#">
@@ -25,18 +25,18 @@ function Navbar() {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
-            <Link className="nav-link" to="/">
-              Home
+            <Link className="nav-link" to="/poetry">
+            شاعری
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/trending">
-              Trending
+            <Link className="nav-link" to="/books">
+            کتابیں
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/writerprofile">
-              Writer Profile
+            <Link className="nav-link" to="/poets">
+            شاعر
             </Link>
           </li>
           <li className="nav-item">
@@ -50,4 +50,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default TopNav;

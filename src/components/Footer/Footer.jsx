@@ -1,18 +1,15 @@
 import React from "react";
+import "./footer.css";
 
 function Footer() {
   return (
-    <section className="bg-secondary">
-      <div className="container">
-        <div className="row">
-          <div className="col-sm-12">
-            <h6 className="text-white text-center mb-3 mt-3">
-              Urdu.com
-            </h6>
-          </div>
+    <div className="footer">
+      <div className="row">
+        <div className="col-sm-12">
+          <h4 className="text-white text-center mb-3 mt-3">اردوادب</h4>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
