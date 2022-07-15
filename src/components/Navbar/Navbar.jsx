@@ -4,9 +4,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function Header() {
+function Navbar() {
   return (
-    <nav className="navbar navbar-expand-sm navbar-light bg-light">
+    <nav className="navbar pull-right navbar-expand-sm navbar-light bg-light">
       <a className="navbar-brand ms-4" href="#">
         اردو
       </a>
@@ -50,4 +50,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;

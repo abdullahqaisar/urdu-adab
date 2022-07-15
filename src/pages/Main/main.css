@@ -1,5 +1,5 @@
 @font-face {
-    src: url('../Fonts/NotoNastaliqUrdu-Bold.ttf')  format('ttf') local(NotoNastaliq);
+    src: url('../../assets/Fonts/NotoNastaliqUrdu-Bold.ttf')  format('ttf') local(NotoNastaliq);
 }
 
 body {
