@@ -1,52 +1,59 @@
 /* eslint-disable jsx-a11y/role-supports-aria-props */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+// import NavDropdown from 'react-bootstrap/NavDropdown';
+import "./TopNav.css";
 
 function TopNav() {
   return (
-    <nav className="navbar pull-right navbar-expand-sm navbar-light bg-light">
-      <a className="navbar-brand ms-4" href="#">
-        اردو
-      </a>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">
-            <Link className="nav-link" to="/poetry">
-            شاعری
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/books">
-            کتابیں
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/poets">
-            شاعر
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/login">
-              Login
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <>
+      <Navbar pull-right expand="lg" className="navBar">
+        <Container>
+          <Navbar.Brand href="/" className="brand ms-4">
+            اردو ادب
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ml-auto nav">
+              <Nav.Link href="/poetry" className="navLink">
+                شاعری
+              </Nav.Link>
+              <Nav.Link href="/books" className="navLink">
+                کتابیں
+              </Nav.Link>
+              <Nav.Link href="/poets" className="navLink">
+                شاعر
+              </Nav.Link>
+              {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown> */}
+            </Nav>
+            <Form className="d-flex form">
+              <Form.Control
+                type="search"
+                placeholder="تلاش کیجیے"
+                className="me-2 search"
+                aria-label="Search"
+              />
+            </Form>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </>
   );
 }
 
