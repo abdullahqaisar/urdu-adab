@@ -1,34 +1,43 @@
 .header {
+  position: relative;
   background: #2E2C35;
   width: 100%;
   height: 576px;
   left: 0px;
-  top: 128px;
 }
 
 .banner {
     position: absolute;
+    bottom: 0;
     width: 685px;
     height: 545px;
-    left: 10%;
-    top: 89px;
+    left: 14%;
+    align-items: flex-end;
+    display: flex;
 }
 
 .header-text {
   text-align: right;
   width: 60%;
   position: absolute;
-  top: 40%;
-  right: 2%;
+  top: 25%;
+  right: 14%;
   color: #E8E8E8;
 }
 
 .header-text h1 {
-  font-size: 5rem;
+  font-size: 8rem;
   letter-spacing: 10px;
-  margin-right: 10%;
-  margin-block-start: 0.67rem;
-  margin-block-end: 0rem;
+}
+
+.header-text h2 {
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  color: #918f8f;
+  font-style: italic;
+  margin-bottom: 1%;
+  margin-top: 3%;
+  margin-right: 2%;
 }
 
 .defination {
@@ -36,17 +45,5 @@
   font-weight: lighter;
   font-style: italic;
   color: #918f8f;
-  margin-right: 11%;
-  margin-block-start: 0rem;
-  margin-bottom: 10%;
-}
-
-.header-text h2 {
-  margin-right: 11%;
-  font-family: Helvetica, sans-serif;
-  font-weight: lighter;
-  color: #918f8f;
-  font-style: italic;
-  margin-block-start: 0rem;
-  margin-block-end: 0rem;
+  margin-right: 2%;
 }

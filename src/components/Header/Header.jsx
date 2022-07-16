@@ -9,7 +9,6 @@ function Header() {
       <div className="header-text">
         <h1 className="heading1">اردو</h1>
         <h2>/ˈʊəduː,ˈəːduː/</h2>
-        <h2>noun</h2>
         <div className="defination">
           <p>Urdu is an Indo-Aryan language spoken chiefly in South Asia.</p>
         </div>
