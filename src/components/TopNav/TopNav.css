@@ -4,26 +4,33 @@
 }
 
 .brand{
-    font-size: 32px;
-    padding-bottom: 20px;
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbarCollapse {
+    display: flex;
 }
 
 .nav {
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .navLink {
-    margin: 0px 15px;
+    margin: 0px 1rem;
+    
 }
 
 .form {
-    margin-right: 46%;
+
 }
 
 .search {
-    font-size: 15px;
+    font-size: 1rem;
     background: none;
-    padding: 12px 15px 12px 90px;
+    padding: 0.6rem 1rem 0.6rem 4rem;
     border: 1px solid #2E2C35;
     border-radius: 5px;
+    margin-right: 10px;
+
 }

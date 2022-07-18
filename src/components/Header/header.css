@@ -2,16 +2,16 @@
   position: relative;
   background: #2E2C35;
   width: 100%;
-  height: 576px;
+  height: 25rem;
   left: 0px;
 }
 
 .banner {
     position: absolute;
     bottom: 0;
-    width: 685px;
-    height: 545px;
-    left: 14%;
+    width: 29rem;
+    height: 24rem;
+    left: 8rem;
     align-items: flex-end;
     display: flex;
 }
@@ -20,8 +20,8 @@
   text-align: right;
   width: 60%;
   position: absolute;
-  top: 25%;
-  right: 14%;
+  top: 4rem;
+  right: 8rem;
   color: #E8E8E8;
 }
 
