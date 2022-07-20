@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import gazals from "../../data/gazals.js";
+import books from "../../data/books.js";
 
 import BookCard from "../../components/Elements/BookCard";
 import GazalCard from "../../components/Elements/GazalCard";
@@ -18,23 +20,30 @@ export default function Main() {
     <Container fluid className="p-0">
       <TopNav />
       <Header />
-      <div className="m-6">
-        <SectionHeading heading="مقبول غزلیں" />
-        <Row>
-          <GazalCard />
-          <GazalCard />
-          <GazalCard />
-        </Row>
-      </div>
 
-      <div className="m-6">
-        <SectionHeading heading="نمائندہ کتابیں" />
-        <div className="row">
-          <BookCard />
-          <BookCard />
-          <BookCard />
-        </div>
-      </div>
+      <SectionHeading heading="مقبول غزلیں" />
+      <Row className="row">
+        {gazals.map((gazal) => (
+          <GazalCard
+            key={gazal.key}
+            title={gazal.title}
+            imageSrc={gazal.imageSrc}
+            writer={gazal.writer}
+          />
+        ))}
+      </Row>
+
+      <SectionHeading heading="نمائندہ کتابیں" />
+      <Row className="row">
+        {books.map((book) => (
+          <BookCard
+            key={book.key}
+            title={book.title}
+            writer={book.writer}
+            image={book.image}
+          />
+        ))}
+      </Row>
       <Footer />
     </Container>
   );

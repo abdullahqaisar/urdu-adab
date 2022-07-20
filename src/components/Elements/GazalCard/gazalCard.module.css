@@ -1,0 +1,22 @@
+.column {
+    margin: 0.5rem 0.5rem;
+}
+
+.card {
+    border: 3px solid #2E2C35;
+    width: 12rem;
+    border-radius: 5%;
+    background-color: #e8e8e8;
+    align-items: center;
+    margin: 0 9rem;
+}
+
+.cardImage {
+    width: 11.7rem;
+    border-radius: 5%;
+}
+
+.title {
+    font-size: medium;
+    padding: 2px;
+}

@@ -7,3 +7,8 @@ body {
 .container{
   padding: 0%;
 }
+
+.row {
+  direction: rtl;
+  margin: 9rem;
+}

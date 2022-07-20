@@ -1,12 +1,14 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
+import "./bookCard.module.css"
 
 function BookCard() {
   return (
-    <div className="col-md-4">
+    <Col sm={3}>
       <Card className="card">
         <Card.Img
+          className="image"
           variant="top"
           src="https://sm.mashable.com/mashable_pk/photo/default/faiz_sj29.png"
         />
@@ -15,7 +17,7 @@ function BookCard() {
           <Card.Text>گلوں میں رنگ بھرے باد نوبہار چلے</Card.Text>
         </Card.Body>
       </Card>
-    </div>
+    </Col>
   );
 }
 

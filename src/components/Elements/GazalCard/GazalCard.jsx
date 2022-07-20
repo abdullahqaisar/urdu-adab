@@ -1,24 +1,20 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import "./GazalCard.css";
+import "./gazalCard.module.css";
 import Col from "react-bootstrap/Col";
 
-function GazalCard() {
+const GazalCard = (props) => {
   return (
-    <Col>
+    <Col md={2} className="column">
       <Card className="card">
-        <Card.Img
-          variant="top"
-          className="cardImage"
-          src="https://i.postimg.cc/fypgXS75/gazal-img.jpg"
-        />
+        <Card.Img variant="top" className="cardImage" src={props.imageSrc} />
         <Card.Body>
-          <Card.Title>وہ ہمسفر تھا مگر اُس سے ہمنوائی نہ تھی...</Card.Title>
-          <Card.Text>نصیر ترابی</Card.Text>
+          <Card.Title className="title">{props.title}</Card.Title>
+          <Card.Text className="text">{props.writer}</Card.Text>
         </Card.Body>
       </Card>
     </Col>
   );
-}
+};
 
 export default GazalCard;
