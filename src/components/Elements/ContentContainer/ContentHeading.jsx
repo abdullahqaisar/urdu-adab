@@ -1,10 +1,10 @@
 import React from 'react'
-import './Section-Heading.css'
+import './ContentHeading.css'
 
-function SectionHeading(props) {
+function ContentHeading(props) {
   return (
     <div className='heading'>{props.heading}</div>
   )
 }
 
-export default SectionHeading
+export default ContentHeading;
