@@ -1,0 +1,12 @@
+.container {
+    padding: 0%;
+  }
+  
+  .row {
+    direction: rtl;
+    margin: 0rem 8rem !important;
+  }
+  
+  .column {
+    margin: 1rem 0;
+  }
