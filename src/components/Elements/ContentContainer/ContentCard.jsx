@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import "./ContentCard.css"
 
 function ContentCard(props) {
+
   return (
     <Card className="card">
       <Card.Img variant="top" className="cardImage" src={props.imageSrc} />

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import gazals from "../../data/gazals";
-// import "./GazalSection.css"
+import books from "../../data/books";
+import "./BookSection.css";
 
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -8,26 +8,26 @@ import Col from "react-bootstrap/Col";
 import ContentCard from "../Elements/ContentContainer/ContentCard.jsx";
 import ContentContainer from "../Elements/ContentContainer/ContentContainer";
 
-function GazalSection() {
-  const heading = "مقبول غزلیں";
-  const [gazalData, setGazalData] = useState([]);
+function BookSection() {
+  const heading = "نمائندہ کتابیں";
+  const [bookData, setBookData] = useState([]);
 
   useEffect(() => {
-    setGazalData(gazals);
-  }, [setGazalData]);
+    setBookData(books);
+  }, [setBookData]);
 
   return (
     <>
       <ContentContainer heading={heading} />
       <Row className="row">
-        {gazalData.map((gazal) => (
+        {bookData.map((book) => (
           <Col className="column">
             <ContentCard
-              className="gazalCardImage"
-              key={gazal.key}
-              title={gazal.title}
-              imageSrc={gazal.imageSrc}
-              writer={gazal.writer}
+              className="bookCardImage"
+              key={book.key}
+              title={book.title}
+              imageSrc={book.imageSrc}
+              writer={book.writer}
             />
           </Col>
         ))}
@@ -36,4 +36,4 @@ function GazalSection() {
   );
 }
 
-export default GazalSection;
+export default BookSection;

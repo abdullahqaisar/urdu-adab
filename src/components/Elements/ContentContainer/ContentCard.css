@@ -1,22 +1,13 @@
-.column {
-    margin: 0.5rem 0.5rem;
-}
-
 .card {
-    border: 3px solid #2E2C35;
-    width: 12rem;
-    border-radius: 5%;
-    background-color: #e8e8e8;
-    align-items: center;
-    margin: 0 0.1rem;
-}
-
-.cardImage {
-    width: 11.7rem;
-    border-radius: 5%;
+    border: 3px solid #2E2C35 !important; 
+    width: 12rem !important;
+    border-radius: 5% !important;
+    background-color: #e8e8e8 !important;
+    align-items: center !important;
 }
 
 .title {
-    font-size: medium;
+    font-size: large !important;
+    line-height: 2rem !important;
     padding: 2px;
 }

@@ -1,14 +1,12 @@
-body {
-  background-color: #e8e8e8;
-  font-family: "NotoNastaliq", Helvetica, serif;
-  margin: 0%;
-}
-
-.container{
+.container {
   padding: 0%;
 }
 
 .row {
   direction: rtl;
-  margin: 9rem;
+  margin: 0rem 8rem !important;
+}
+
+.column {
+  margin: 1rem 0;
 }

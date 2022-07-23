@@ -1,4 +1,9 @@
-.cardImage {
+.gazalCardImage {
     width: 11.7rem;
     border-radius: 5%;
 }
+
+.column {
+    margin: 0.5rem 0rem;
+}
+  
