@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import TopNav from "../../components/TopNav";
 import Footer from "../../components/Footer";
 
-function Books() {
+function Books(props) {
   return (
     <Container fluid className="p-0">
       <TopNav />
